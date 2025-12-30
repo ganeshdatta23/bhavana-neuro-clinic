@@ -26,6 +26,13 @@ export default function Home() {
             title="Brain Animation Background"
           />
         </div>
+        <div className={homeStyles.heroImageMobile}>
+          <img
+            src="/banner4.jpg"
+            alt="Bhavana Neuro Clinic"
+            className="w-full h-full object-cover"
+          />
+        </div>
         <div className={homeStyles.heroContent}>
           <motion.div
             className={homeStyles.heroTextWrapper}
