@@ -1,0 +1,32 @@
+export const headerStyles = {
+    header: "sticky top-0 z-50 w-full transition-all duration-300",
+    headerScrolled: "border-b border-border/40 bg-background/95 backdrop-blur-sm",
+    headerTransparent: "bg-transparent",
+    container: "container flex h-20 items-center",
+    desktopNav: "ml-auto hidden lg:flex",
+    navTrigger: "bg-transparent",
+    navContent: "grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2 lg:w-[600px]",
+    actionsWrapper: "flex flex-1 items-center justify-end gap-4",
+    bookButton: "hidden sm:flex",
+    mobileTrigger: "lg:hidden",
+    mobileSheetContent: "w-full max-w-sm pr-0",
+    mobileContainer: "flex h-full flex-col",
+    mobileHeader: "flex items-center justify-between border-b px-6 pb-4 pt-4",
+    mobileNavWrapper: "flex-1 overflow-y-auto p-6",
+    mobileNav: "flex flex-col gap-4",
+    mobileLink: "text-lg font-medium",
+    mobileLinkActive: "text-primary",
+    mobileLinkInactive: "text-foreground/80 hover:text-primary",
+    accordionItem: "border-none",
+    accordionTrigger: "text-lg font-medium py-2",
+    accordionContent: "pl-4",
+    accordionLinksWrapper: "flex flex-col gap-4 mt-2",
+    accordionLink: "text-foreground/80 hover:text-primary",
+    mobileFooter: "mt-auto border-t p-6",
+    mobileFooterButton: "w-full",
+
+    // ListItem styles
+    listItemLink: "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
+    listItemTitle: "text-sm font-medium leading-none",
+    listItemDescription: "line-clamp-2 text-sm leading-snug text-muted-foreground"
+};

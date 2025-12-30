@@ -1,0 +1,70 @@
+{
+  "placeholderImages": [
+    {
+      "id": "hero-brain",
+      "description": "A modern, abstract illustration of a brain with network connections.",
+      "imageUrl": "https://storage.googleapis.com/stabl-media/659d5750-e555-4e92-91f8-a006323a6331.jpeg",
+      "imageHint": "abstract brain"
+    },
+    {
+      "id": "service-cognitive-assessment",
+      "description": "Image representing cognitive assessment.",
+      "imageUrl": "https://images.unsplash.com/photo-1643706755594-d0e8d8d42a09?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxwc3ljaG9sb2d5JTIwdGVzdHxlbnwwfHx8fDE3NjcwODA2NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "psychology test"
+    },
+    {
+      "id": "service-neurofeedback",
+      "description": "Image representing neurofeedback therapy.",
+      "imageUrl": "https://images.unsplash.com/photo-1599247015160-ed6f29e771d2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8YnJhaW4lMjB3YXZlc3xlbnwwfHx8fDE3NjcwODA2NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brain waves"
+    },
+    {
+      "id": "service-memory-enhancement",
+      "description": "Image representing memory enhancement programs.",
+      "imageUrl": "https://images.unsplash.com/photo-1577401239170-897942555fb3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxicmFpbiUyMHB1enpsZXxlbnwwfHx8fDE3NjcwODA2NTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "brain puzzle"
+    },
+    {
+      "id": "service-stroke-rehab",
+      "description": "Image representing stroke rehabilitation.",
+      "imageUrl": "https://images.unsplash.com/photo-1609113160023-4e31f3765fd7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxwaHlzaWNhbCUyMHRoZXJhcHl8ZW58MHx8fHwxNzY3MDgwNjU5fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "physical therapy"
+    },
+    {
+      "id": "service-peak-performance",
+      "description": "Image representing peak mental performance training.",
+      "imageUrl": "https://images.unsplash.com/photo-1619334358492-6977a4d4f643?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmb2N1cyUyMGNoZXNzfGVufDB8fHx8MTc2NzA4MDY1OXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "focus chess"
+    },
+    {
+      "id": "service-tbi-recovery",
+      "description": "Image representing traumatic brain injury recovery.",
+      "imageUrl": "https://images.unsplash.com/photo-1656577796467-e049bfc98376?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdXBwb3J0JTIwZ3JvdXB8ZW58MHx8fHwxNzY3MDIzOTQzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "support group"
+    },
+    {
+      "id": "map-vijayawada",
+      "description": "A stylized map of Vijayawada showing the clinic's location.",
+      "imageUrl": "https://images.unsplash.com/photo-1581922819941-6ab31ab79afc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxjaXR5JTIwbWFwfGVufDB8fHx8MTc2NzA3NjEyMHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city map"
+    },
+    {
+      "id": "patient-avatar-1",
+      "description": "Avatar for a patient review.",
+      "imageUrl": "https://images.unsplash.com/photo-1521119989659-a83eee488004?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjcwNzkxNjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "patient-avatar-2",
+      "description": "Avatar for a patient review.",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjcwNzkxNjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    },
+    {
+      "id": "patient-avatar-3",
+      "description": "Avatar for a patient review.",
+      "imageUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxwZXJzb24lMjBwb3J0cmFpdHxlbnwwfHx8fDE3NjcwNzkxNjR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person portrait"
+    }
+  ]
+}
