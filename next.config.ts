@@ -37,7 +37,6 @@ const nextConfig: NextConfig = {
     ],
   },
   // Vercel deployment optimizations
-  swcMinify: true,
   productionBrowserSourceMaps: false,
   // Experimental features for better performance
   experimental: {
