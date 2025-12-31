@@ -20,7 +20,7 @@ export default function DoctorsPage() {
           A team of dedicated, experienced, and compassionate medical professionals at the forefront of neurological and multispeciality care.
         </p>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           {doctors.map(doctor => (
             <Card key={doctor.id} className="flex flex-col">
               <CardHeader className="flex flex-col items-center text-center">
