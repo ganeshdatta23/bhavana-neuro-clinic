@@ -1,10 +1,7 @@
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Input } from '@/components/ui/input';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { Textarea } from '@/components/ui/textarea';
-import { services } from '@/lib/data';
-import { Mail, MapPin, Phone, MessageCircle } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { AppointmentForm } from '@/components/appointment-form';
+import { GoogleMapEmbed } from '@/components/google-map';
+import { Mail, MapPin, Phone, MessageCircle, AlertCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -25,32 +22,31 @@ export default function ContactPage() {
 
         <div className="mt-16 grid grid-cols-1 lg:grid-cols-5 gap-12">
           <div id="appointment" className='lg:col-span-2'>
-            <Card className="p-2 shadow-lg">
-              <CardHeader>
-                <CardTitle className="text-2xl">Book an Appointment</CardTitle>
-                <CardDescription>Fill out the form below and we will contact you shortly.</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form className="space-y-4">
-                  <Input placeholder="Full Name" />
-                  <Input type="tel" placeholder="Phone Number" />
-                  <Input type="email" placeholder="Email Address" />
-                  <Select>
-                    <SelectTrigger>
-                      <SelectValue placeholder="Select Department" />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {services.map(s => <SelectItem key={s.id} value={s.id}>{s.title}</SelectItem>)}
-                    </SelectContent>
-                  </Select>
-                  <Textarea placeholder="Your message (optional)" />
-                  <Button className="w-full" size="lg">Submit Request</Button>
-                </form>
-              </CardContent>
-            </Card>
+            <AppointmentForm />
           </div>
 
           <div className="space-y-8 lg:col-span-3">
+            <Card className='shadow-md border-red-200 bg-red-50 dark:bg-red-950/20'>
+              <CardHeader>
+                <CardTitle className="flex items-center gap-3 text-2xl text-red-600">
+                  <AlertCircle className="h-6 w-6" />
+                  🚨 24/7 Emergency Line
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground mb-4">
+                  If this is a medical emergency, call us immediately:
+                </p>
+                <a
+                  href="tel:+911234567891"
+                  className="inline-flex items-center justify-center gap-2 bg-red-600 hover:bg-red-700 text-white font-semibold px-6 py-4 rounded-lg text-lg transition-colors w-full sm:w-auto"
+                >
+                  <Phone className="h-5 w-5" />
+                  Call +91 12345 67891
+                </a>
+              </CardContent>
+            </Card>
+
             <Card className='shadow-md'>
               <CardHeader>
                 <CardTitle className="flex items-center gap-3 text-2xl">
@@ -60,9 +56,10 @@ export default function ContactPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">123 Health Street, Medical Sector,<br />Vijayawada, Andhra Pradesh, 520001</p>
-                <div className="mt-4 h-64 w-full rounded-md bg-muted flex items-center justify-center overflow-hidden">
-                  <p className="text-muted-foreground">Google Maps Placeholder</p>
-                </div>
+                <GoogleMapEmbed
+                  address="123 Health Street, Medical Sector, Vijayawada, Andhra Pradesh, 520001"
+                  className="mt-4 h-64 w-full rounded-md overflow-hidden"
+                />
                 <p className='mt-4 text-sm text-muted-foreground'>Ample parking available for patients and visitors.</p>
               </CardContent>
             </Card>
@@ -82,13 +79,7 @@ export default function ContactPage() {
                     <a href="tel:+917893959393" className="block text-muted-foreground hover:text-primary">+91 78939 59393</a>
                   </div>
                 </div>
-                <div className="flex items-center gap-4 p-3 rounded-lg hover:bg-muted/50 transition-colors">
-                  <Phone className="h-6 w-6 text-red-500" />
-                  <div>
-                    <span className="font-semibold text-red-500">24/7 Emergency:</span>
-                    <a href="tel:+911234567891" className="block text-muted-foreground hover:text-primary">+91 12345 67891</a>
-                  </div>
-                </div>
+
                 <div className="flex items-center gap-4 p-3 rounded-lg hover:bg-muted/50 transition-colors">
                   <MessageCircle className="h-6 w-6 text-green-500" />
                   <div>

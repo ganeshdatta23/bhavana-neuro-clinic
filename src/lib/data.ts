@@ -262,10 +262,10 @@ export const whyChooseUs: WhyChooseUsItem[] = [
 ];
 
 export const stats: Stat[] = [
-  { value: '15+', label: 'Years of Experience' },
-  { value: '50,000+', label: 'Patients Treated' },
-  { value: '100+', label: 'Hospital Beds' },
-  { value: '20+', label: 'Specialist Doctors' },
+  { value: '10+', label: 'Years of Experience' },
+  { value: '10,500+', label: 'Successful Consultations' },
+  { value: '24/7', label: 'Emergency Neuro Support' },
+  { value: '100%', label: 'Patient-Focused Care' },
 ];
 
 export const conditions: Condition[] = [
@@ -316,8 +316,8 @@ export const facilities: Facility[] = [
 ];
 
 export const blogPosts: BlogPost[] = [
-  { id: '1', title: 'BE-FAST: Recognizing the Early Signs of a Stroke', excerpt: 'Time is brain. Every second counts during a stroke. Learn the BE-FAST acronym to quickly identify stroke symptoms and why immediate medical attention is critical for a better outcome...', href: '/blog/recognizing-stroke-signs' },
-  { id: '2', title: 'Living with Epilepsy: Myths vs. Facts', excerpt: 'Epilepsy is more common than you think, but it\'s surrounded by myths. We debunk common misconceptions and share facts about living a full and active life with epilepsy...', href: '/blog/epilepsy-myths-facts' },
-  { id: '3', title: 'Not Just a Headache: When to See a Doctor for Your Migraine', excerpt: 'Millions suffer from migraines, but many don\'t seek help. Learn about the different types of headaches and understand which symptoms indicate you should consult a neurologist...', href: '/blog/when-to-see-doctor-for-migraine' },
-  { id: '4', title: 'Simple Steps to Keep Your Spine Healthy', excerpt: 'Back pain is a leading cause of disability worldwide. Our neurosurgeons share practical tips on posture, exercise, and lifestyle habits to protect your spine and prevent future problems...', href: '/blog/spine-health-tips' }
+  { id: 'be-fast-stroke', title: 'BE-FAST: Recognizing the Early Signs of a Stroke', excerpt: 'Time is brain. Every second counts during a stroke. Learn the BE-FAST acronym to quickly identify stroke symptoms and why immediate medical attention is critical for a better outcome...', href: '/blog/be-fast-stroke' },
+  { id: 'epilepsy-myths-facts', title: 'Living with Epilepsy: Myths vs. Facts', excerpt: 'Epilepsy is more common than you think, but it\'s surrounded by myths. We debunk common misconceptions and share facts about living a full and active life with epilepsy...', href: '/blog/epilepsy-myths-facts' },
+  { id: 'migraine-doctor-visit', title: 'Not Just a Headache: When to See a Doctor for Your Migraine', excerpt: 'Millions suffer from migraines, but many don\'t seek help. Learn about the different types of headaches and understand which symptoms indicate you should consult a neurologist...', href: '/blog/migraine-doctor-visit' },
+  { id: 'spine-health-tips', title: 'Simple Steps to Keep Your Spine Healthy', excerpt: 'Back pain is a leading cause of disability worldwide. Our neurosurgeons share practical tips on posture, exercise, and lifestyle habits to protect your spine and prevent future problems...', href: '/blog/spine-health-tips' }
 ];

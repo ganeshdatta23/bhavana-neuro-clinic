@@ -1,0 +1,124 @@
+{
+  "articles": [
+    {
+      "id": "be-fast-stroke",
+      "title": "BE-FAST: Recognizing the Early Signs of a Stroke",
+      "author": "Dr. Bhavana Neuro Care",
+      "category": "Stroke Awareness",
+      "featured_image": "https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1200&q=80",
+      "gallery_images": [
+        "https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=800&q=80"
+      ],
+      "content": [
+        {
+          "heading": "Why Early Recognition Matters",
+          "text": "A stroke is a medical emergency where every second counts. Early recognition and immediate treatment can prevent severe brain damage and improve recovery."
+        },
+        {
+          "heading": "What Does BE-FAST Mean?",
+          "text": "BE-FAST is a simple method to recognize the most common warning signs of a stroke."
+        },
+        {
+          "heading": "B – Balance",
+          "text": "Sudden dizziness or loss of coordination."
+        },
+        {
+          "heading": "E – Eyes",
+          "text": "Sudden vision problems in one or both eyes."
+        },
+        {
+          "heading": "F – Face Drooping",
+          "text": "One side of the face may droop or feel numb."
+        },
+        {
+          "heading": "A – Arm Weakness",
+          "text": "Weakness or numbness in an arm or leg."
+        },
+        {
+          "heading": "S – Speech Difficulty",
+          "text": "Slurred or difficult speech."
+        },
+        {
+          "heading": "T – Time",
+          "text": "Call emergency services immediately."
+        }
+      ]
+    },
+    {
+      "id": "epilepsy-myths-facts",
+      "title": "Living with Epilepsy: Myths vs. Facts",
+      "author": "Dr. Bhavana Neuro Care",
+      "category": "Epilepsy",
+      "featured_image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=1200&q=80",
+      "gallery_images": [
+        "https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=800&q=80"
+      ],
+      "content": [
+        {
+          "heading": "Understanding Epilepsy",
+          "text": "Epilepsy is a neurological disorder characterized by recurrent seizures."
+        },
+        {
+          "heading": "Myth vs Fact",
+          "text": "Epilepsy is common and most people with epilepsy live normal, productive lives."
+        },
+        {
+          "heading": "Management",
+          "text": "Medication and lifestyle adjustments can effectively control seizures in many individuals."
+        }
+      ]
+    },
+    {
+      "id": "migraine-doctor-visit",
+      "title": "Not Just a Headache: When to See a Doctor for Your Migraine",
+      "author": "Dr. Bhavana Neuro Care",
+      "category": "Headache & Migraine",
+      "featured_image": "https://images.unsplash.com/photo-1597764699513-ec3f8f93f3c7?auto=format&fit=crop&w=1200&q=80",
+      "gallery_images": [
+        "https://images.unsplash.com/photo-1604881988758-f76ad2f7aac1?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80"
+      ],
+      "content": [
+        {
+          "heading": "Understanding Migraines",
+          "text": "Migraines are a neurological condition, not just common headaches."
+        },
+        {
+          "heading": "When to Seek Help",
+          "text": "Frequent, severe, or worsening headaches should be evaluated by a neurologist."
+        },
+        {
+          "heading": "Treatment",
+          "text": "Personalized treatment plans can significantly improve quality of life."
+        }
+      ]
+    },
+    {
+      "id": "spine-health-tips",
+      "title": "Simple Steps to Keep Your Spine Healthy",
+      "author": "Dr. Bhavana Neuro Care",
+      "category": "Spine Care",
+      "featured_image": "https://images.unsplash.com/photo-1607962837359-5e7e89f86776?auto=format&fit=crop&w=1200&q=80",
+      "gallery_images": [
+        "https://images.unsplash.com/photo-1554284126-aa88f22d8b74?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1599447421416-3414500d18a5?auto=format&fit=crop&w=800&q=80"
+      ],
+      "content": [
+        {
+          "heading": "Why Spine Health Matters",
+          "text": "The spine supports movement, posture, and protects the nervous system."
+        },
+        {
+          "heading": "Daily Habits",
+          "text": "Good posture, regular exercise, and correct lifting techniques protect the spine."
+        },
+        {
+          "heading": "Medical Advice",
+          "text": "Persistent back pain or neurological symptoms require professional evaluation."
+        }
+      ]
+    }
+  ]
+}
