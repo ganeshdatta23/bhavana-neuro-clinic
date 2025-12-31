@@ -8,7 +8,7 @@ import { Mail, MapPin, Phone, MessageCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Bhavana Neuro Clinic',
+  title: 'Contact Us | Dr. Bhavana Neuro Care',
   description: 'Get in touch to book an appointment, ask a question, or find our location. We are here to help you 24/7.',
 };
 
@@ -79,7 +79,7 @@ export default function ContactPage() {
                   <Phone className="h-6 w-6 text-muted-foreground" />
                   <div>
                     <span className="font-semibold">General Inquiry:</span>
-                    <a href="tel:+911234567890" className="block text-muted-foreground hover:text-primary">+91 12345 67890</a>
+                    <a href="tel:+917893959393" className="block text-muted-foreground hover:text-primary">+91 78939 59393</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 p-3 rounded-lg hover:bg-muted/50 transition-colors">
@@ -93,7 +93,7 @@ export default function ContactPage() {
                   <MessageCircle className="h-6 w-6 text-green-500" />
                   <div>
                     <span className="font-semibold">WhatsApp:</span>
-                    <a href="https://wa.me/911234567890" target='_blank' className="block text-muted-foreground hover:text-primary">+91 12345 67890</a>
+                    <a href="https://wa.me/917893959393" target='_blank' className="block text-muted-foreground hover:text-primary">+91 78939 59393</a>
                   </div>
                 </div>
                 <div className="flex items-center gap-4 p-3 rounded-lg hover:bg-muted/50 transition-colors">

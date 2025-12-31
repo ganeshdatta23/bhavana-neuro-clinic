@@ -10,10 +10,10 @@ export function Logo({ className }: LogoProps) {
         <Link href="/" className={cn(logoStyles.link, className)}>
             <BrainCircuit className={logoStyles.icon} />
             <div className={logoStyles.textWrapper}>
-                <span className={logoStyles.title}>
-                    Bhavana Neuro
+                <span className={cn(logoStyles.title, className?.includes('footer') && 'text-white')}>
+                    Dr. Bhavana
                 </span>
-                <span className={logoStyles.subtitle}>Clinic</span>
+                <span className={logoStyles.subtitle}>Neuro Care</span>
             </div>
         </Link>
     );

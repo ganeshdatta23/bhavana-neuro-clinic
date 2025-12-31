@@ -5,7 +5,7 @@ import { Languages, MessageSquare, Star } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Our Specialists | Bhavana Neuro Clinic',
+  title: 'Our Specialists | Dr. Bhavana Neuro Care',
   description: 'Meet our team of experienced and dedicated neurologists, neurosurgeons, and other specialists committed to your health.',
 };
 
@@ -24,7 +24,7 @@ export default function DoctorsPage() {
           {doctors.map(doctor => (
             <Card key={doctor.id} className="flex flex-col">
               <CardHeader className="flex flex-col items-center text-center">
-                <Avatar className="h-24 w-24 mb-4">
+                <Avatar className="h-40 w-40 mb-4">
                   <AvatarImage src={doctor.avatarUrl} alt={doctor.name} />
                   <AvatarFallback>{doctor.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                 </Avatar>

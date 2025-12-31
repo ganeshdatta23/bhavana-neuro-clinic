@@ -4,7 +4,7 @@ import { LucideIcon } from '@/components/lucide-icon';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Our Facilities | Bhavana Neuro Clinic',
+  title: 'Our Facilities | Dr. Bhavana Neuro Care',
   description: 'Explore our state-of-the-art facilities, including advanced neuro-diagnostics, operation theatres, and a dedicated Neuro-ICU designed for patient safety and comfort.',
 };
 

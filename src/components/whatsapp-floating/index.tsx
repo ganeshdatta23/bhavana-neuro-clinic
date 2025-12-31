@@ -30,7 +30,7 @@ export function WhatsAppFloating() {
             className={whatsappStyles.container}
         >
             <Link
-                href="https://wa.me/911234567890" // Placeholder number
+                href="https://wa.me/917893959393"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Chat on WhatsApp"

@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 import { DepartmentCard } from '@/components/department-card';
 
 export const metadata: Metadata = {
-  title: 'Departments & Services | Bhavana Neuro Clinic',
+  title: 'Departments & Services | Dr. Bhavana Neuro Care',
   description: 'Explore the comprehensive neurological and multispeciality services we offer, from advanced stroke care and neurosurgery to general medicine and orthopedics.',
 };
 

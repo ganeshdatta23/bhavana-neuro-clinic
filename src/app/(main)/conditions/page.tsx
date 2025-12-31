@@ -4,7 +4,7 @@ import { CheckCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Treatments & Conditions | Bhavana Neuro Clinic',
+  title: 'Treatments & Conditions | Dr. Bhavana Neuro Care',
   description: 'Learn about common neurological conditions like stroke, epilepsy, and migraine, and understand the treatment approaches we use at our hospital.',
 };
 

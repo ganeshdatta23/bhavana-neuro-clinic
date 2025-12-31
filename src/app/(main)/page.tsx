@@ -8,11 +8,16 @@ import Link from 'next/link';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { DepartmentCard } from '@/components/department-card';
 import { GlowCard } from '@/components/ui/glow-card';
+import Autoplay from "embla-carousel-autoplay";
+import { useRef } from 'react';
 import { motion } from 'framer-motion';
 import { homeStyles } from './styles';
 import { containerVariants, itemVariants } from './constants';
 
 export default function Home() {
+  const plugin = useRef(
+    Autoplay({ delay: 3000, stopOnInteraction: false })
+  );
 
 
 
@@ -29,7 +34,7 @@ export default function Home() {
         <div className={homeStyles.heroImageMobile}>
           <img
             src="/banner4.jpg"
-            alt="Bhavana Neuro Clinic"
+            alt="Dr. Bhavana Neuro Care"
             className="w-full h-full object-cover"
           />
         </div>
@@ -50,7 +55,7 @@ export default function Home() {
               className={homeStyles.heroDescription}
               variants={itemVariants}
             >
-              Welcome to Bhavana Neuro Clinic, where advanced neuroscience meets dedicated patient care. We are committed to providing comprehensive and affordable treatment for a wide range of neurological and related health conditions.
+              Welcome to Dr. Bhavana Neuro Care, where advanced neuroscience meets dedicated patient care. We are committed to providing comprehensive and affordable treatment for a wide range of neurological and related health conditions.
             </motion.p>
             <motion.div
               className={homeStyles.heroButtons}
@@ -88,7 +93,7 @@ export default function Home() {
 
       <section id="why-choose-us" className={homeStyles.whyChooseUsSection}>
         <div className={homeStyles.whyChooseUsContainer}>
-          <h2 className={homeStyles.sectionTitle}>Why Choose Bhavana Neuro Clinic?</h2>
+          <h2 className={homeStyles.sectionTitle}>Why Choose Dr. Bhavana Neuro Care?</h2>
           <div className={homeStyles.whyChooseUsGrid}>
             {whyChooseUs.map((item, index) => (
               <GlowCard key={index} className={homeStyles.featureCard}>
@@ -128,6 +133,7 @@ export default function Home() {
               align: "start",
               loop: true,
             }}
+            plugins={[plugin.current]}
             className={homeStyles.carousel}
           >
             <CarouselContent>

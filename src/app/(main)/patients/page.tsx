@@ -4,7 +4,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Patient Information | Bhavana Neuro Clinic',
+  title: 'Patient Information | Dr. Bhavana Neuro Care',
   description: 'Find all the information you need for your visit, including how to book appointments, admission processes, and insurance options.',
 };
 
@@ -30,9 +30,9 @@ export default function PatientsPage() {
             <CardContent className="space-y-4 text-muted-foreground">
               <p>Booking an appointment is easy. You can reach us in one of the following ways:</p>
               <ul className="list-disc list-inside space-y-2">
-                <li><strong>By Phone:</strong> Call our reception at <a href="tel:+911234567890" className="text-primary font-semibold">+91 12345 67890</a> during working hours.</li>
+                <li><strong>By Phone:</strong> Call our reception at <a href="tel:+917893959393" className="text-primary font-semibold">+91 78939 59393</a> during working hours.</li>
                 <li><strong>Online Form:</strong> Fill out the <Link href="/contact#appointment" className="text-primary font-semibold">appointment form</Link> on our contact page.</li>
-                <li><strong>WhatsApp:</strong> Send us a message at <a href="https://wa.me/911234567890" target="_blank" className="text-primary font-semibold">+91 12345 67890</a>.</li>
+                <li><strong>WhatsApp:</strong> Send us a message at <a href="https://wa.me/917893959393" target="_blank" className="text-primary font-semibold">+91 78939 59393</a>.</li>
                 <li><strong>Walk-in:</strong> You can visit the hospital directly, though appointments are recommended to avoid waiting.</li>
               </ul>
             </CardContent>

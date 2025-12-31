@@ -6,7 +6,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Health Articles | Bhavana Neuro Clinic',
+  title: 'Health Articles | Dr. Bhavana Neuro Care',
   description: 'Read health articles from our experts on stroke prevention, epilepsy awareness, headache management, and other neurological topics.',
 };
 

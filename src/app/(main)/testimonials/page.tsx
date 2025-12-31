@@ -4,8 +4,8 @@ import { testimonials } from '@/lib/data';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Patient Testimonials | Bhavana Neuro Clinic',
-  description: 'Read stories from our patients about their experiences with our doctors, staff, and the care they received at Bhavana Neuro Clinic.',
+  title: 'Patient Testimonials | Dr. Bhavana Neuro Care',
+  description: 'Read stories from our patients about their experiences with our doctors, staff, and the care they received at Dr. Bhavana Neuro Care.',
 };
 
 export default function TestimonialsPage() {

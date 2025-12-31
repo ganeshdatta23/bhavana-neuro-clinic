@@ -18,9 +18,10 @@ export function SiteFooter() {
             <div className={footerStyles.container}>
                 <div className={footerStyles.grid}>
                     <div className={footerStyles.col1}>
-                        <Logo />
+                        <Logo className="footer" />
                         <p className={footerStyles.description}>
-                            Providing expert, compassionate neurological and multispeciality care.
+                            Providing expert, compassionate neurological and multispeciality care.<br/>
+                            <span className="text-sm">Under Dr. Kagitha Lakshmi Narendra Charitable Trust</span>
                         </p>
                         <div className={footerStyles.socialWrapper}>
                             <Button variant="ghost" size="icon"><Twitter className={footerStyles.icon} /></Button>
@@ -62,7 +63,7 @@ export function SiteFooter() {
                             </li>
                             <li className={footerStyles.contactItem}>
                                 <span className={footerStyles.contactIcon}>📞</span>
-                                <span>+91 12345 67890</span>
+                                <span>+91 78939 59393</span>
                             </li>
                             <li className={footerStyles.contactItem}>
                                 <span className={footerStyles.contactIcon}>📧</span>
@@ -72,7 +73,7 @@ export function SiteFooter() {
                     </div>
                 </div>
                 <div className={footerStyles.copyright}>
-                    <p>&copy; {new Date().getFullYear()} Bhavana Neuro Clinic. All rights reserved.</p>
+                    <p>&copy; {new Date().getFullYear()} Dr. Bhavana Neuro Care. Under Dr. Kagitha Lakshmi Narendra Charitable Trust. All rights reserved.</p>
                 </div>
             </div>
         </footer>

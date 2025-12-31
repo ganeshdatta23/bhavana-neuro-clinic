@@ -4,7 +4,7 @@ import { ShieldCheck } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Bhavana Neuro Clinic',
+  title: 'About Dr. Bhavana Neuro Care',
   description: 'Learn about our mission, vision, and commitment to providing the highest standards of neurological and multispeciality care in Vijayawada.',
 };
 
@@ -13,7 +13,7 @@ export default function AboutPage() {
     <div className="bg-background text-foreground">
       <div className="container mx-auto py-16 px-4">
         <h1 className="text-center font-headline text-4xl font-bold md:text-5xl">
-          About Bhavana Neuro Clinic
+          About Dr. Bhavana Neuro Care
         </h1>
         <p className="mt-4 mx-auto max-w-3xl text-center text-lg text-muted-foreground">
           Your trusted partner in neurological health, combining advanced medical science with a human touch.
@@ -43,10 +43,10 @@ export default function AboutPage() {
             </Avatar>
             <div className='md:w-3/4'>
               <p className="text-muted-foreground">
-                Founded by Dr. Ramesh Gupta, a visionary neurologist with over two decades of experience, Bhavana Neuro Clinic was established with a simple yet powerful goal: to bridge the gap in specialized neurological care in our community. Starting as a small clinic, our commitment to patient well-being and clinical excellence has fueled our growth into a comprehensive multispeciality hospital.
+                 Dr. Bhavana Neuro Care was established with a simple yet powerful goal: to bridge the gap in specialized neurological care in our community. Starting as a small clinic, our commitment to patient well-being and clinical excellence has fueled our growth into a comprehensive hospital. We operate under the Dr. Kagitha Lakshmi Narendra Charitable Trust.
               </p>
               <p className="mt-4 text-muted-foreground">
-                Today, under the continued leadership of Dr. Gupta and a team of dedicated specialists, we uphold the founding values of integrity, compassion, and innovation. Our leadership team is comprised of experienced medical professionals and administrators who work together to ensure the highest standards of patient care, safety, and operational efficiency.
+                Today, under the continued leadership of Dr. Parasa Lakshmi Bhavana and Dr. Kagitha Rakesh a team of dedicated specialists, we uphold the founding values of integrity, compassion, and innovation. Our leadership team is comprised of experienced medical professionals and administrators who work together to ensure the highest standards of patient care, safety, and operational efficiency.
               </p>
             </div>
           </div>
