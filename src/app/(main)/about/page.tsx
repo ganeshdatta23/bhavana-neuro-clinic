@@ -35,7 +35,7 @@ export default function AboutPage() {
         </div>
 
         <div className="mt-20">
-          <h2 className="text-center font-headline text-3xl font-bold">Our History & Leadership</h2>
+          <h2 className="text-center font-headline text-3xl font-bold">Our Expertise & Standards</h2>
           <div className="mt-8 flex flex-col items-center gap-8 md:flex-row">
             <Avatar className="h-32 w-32">
               <AvatarImage src="https://picsum.photos/seed/founder/400/400" alt="Founder" />

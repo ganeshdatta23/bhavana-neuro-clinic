@@ -46,7 +46,8 @@ export default function ServicesPage() {
         </section>
 
         <section id="additional-departments" className="mt-20">
-          <h2 className="font-headline text-3xl font-semibold text-primary mb-8">Additional Departments</h2>
+          {/* <h2 className="font-headline text-3xl font-semibold text-primary mb-8">Additional Departments</h2> */} 
+          {/* commented out the additionalDepartments title as per new design */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {additionalDepartments.map(dept => (
               <Card key={dept.id}>
