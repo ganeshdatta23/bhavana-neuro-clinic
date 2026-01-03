@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { whyChooseUs, stats, testimonials, services } from '@/lib/data';
-import { Phone, ShieldCheck, ArrowRight, Star } from 'lucide-react';
+import { Phone, ShieldCheck, ArrowRight, Star, User } from 'lucide-react';
 import Link from 'next/link';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { DepartmentCard } from '@/components/department-card';
@@ -182,8 +182,9 @@ export default function Home() {
                       <CardHeader>
                         <div className="flex items-center gap-4">
                           <Avatar className={homeStyles.avatar}>
-                            <AvatarImage src={testimonial.avatarUrl} alt={testimonial.name} />
-                            <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                            <AvatarFallback className="bg-primary/10">
+                              <User className="h-5 w-5 text-primary" />
+                            </AvatarFallback>
                           </Avatar>
                           <div>
                             <CardTitle className={homeStyles.testimonialName}>{testimonial.name}</CardTitle>

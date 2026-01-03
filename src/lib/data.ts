@@ -198,32 +198,32 @@ export const doctors: Doctor[] = [
 export const testimonials: Testimonial[] = [
   {
     id: 't1',
-    name: 'R. Kumar, Vijayawada',
+    name: 'R. Ravi Kumar, Vijayawada',
     quote: 'The doctors explained my condition so clearly and the treatment was very effective. The staff is very caring and the hospital is spotless. I felt I was in the safest hands.',
     avatarUrl: 'https://picsum.photos/seed/patient1/100/100',
   },
   {
     id: 't2',
-    name: 'S. Devi, Guntur',
-    quote: 'My father received emergency stroke care here. The quick response from the team at Dr. Bhavana Neuro Care saved his life. We are forever grateful for their expertise and compassion.',
+    name: 'S.P.R. Ambika Devi, Guntur',
+    quote: 'My father received emergency stroke care here. The quick response from the team at Dr. Bhavana Neuro Care saved his life. We are forever grateful for their expertise.',
     avatarUrl: 'https://picsum.photos/seed/patient2/100/100',
   },
   {
     id: 't3',
-    name: 'A. Khan, Eluru',
+    name: 'MD. Shahbaaz, Eluru',
     quote: 'I have been living with epilepsy for years. The team here helped me find the right medication. My seizures are finally under control. The level of care is excellent.',
     avatarUrl: 'https://picsum.photos/seed/patient3/100/100',
   },
   {
     id: 't4',
-    name: 'P. Rao, Vijayawada',
-    quote: 'The physiotherapy department is fantastic. Their personalized exercises and constant encouragement helped me recover fully after my spine surgery. Highly recommended.',
+    name: 'P. Rama Rao, Vijayawada',
+    quote: 'The Neuro department is fantastic. Their personalized exercises and constant encouragement helped me recover fully after my spine surgery. Highly recommended.',
     avatarUrl: 'https://picsum.photos/seed/patient4/100/100',
   },
   {
     id: 't5',
-    name: 'M. Begum, Machilipatnam',
-    quote: 'Finding a good neurologist was a challenge. Dr. Anil Kumar was patient, listened to all my concerns about my migraines, and the treatment has made a huge difference.',
+    name: 'SK. Nazeema Begum, Machilipatnam',
+    quote: 'Finding a good neurologist was a challenge. Dr. Bhavana was so patient, listened to all my concerns about my migraines, and the treatment has made a huge difference.',
     avatarUrl: 'https://picsum.photos/seed/patient5/100/100',
   },
 ];
@@ -310,8 +310,8 @@ export const facilities: Facility[] = [
   { name: 'Advanced Operation Theatres', description: 'Modular OTs equipped for complex neurosurgeries with strict infection control.', icon: 'Stethoscope' },
   { name: 'Neuro-ICU', description: 'Dedicated Neuro-Intensive Care Unit with 24/7 monitoring by a specialized team.', icon: 'BedDouble' },
   { name: 'Radiology (Tie-up)', description: 'Seamless access to high-resolution MRI and CT scans through our trusted diagnostic partners.', icon: 'Radiation' },
-  { name: '24/7 Pharmacy', description: 'A well-stocked, round-the-clock pharmacy ensuring availability of all essential and specialized medications.', icon: 'Pill' },
-  { name: 'Ambulance Services', description: 'Fully equipped ambulances for safe and rapid patient transport during emergencies.', icon: 'Ambulance' },
+  // { name: '24/7 Pharmacy', description: 'A well-stocked, round-the-clock pharmacy ensuring availability of all essential and specialized medications.', icon: 'Pill' },
+  // { name: 'Ambulance Services', description: 'Fully equipped ambulances for safe and rapid patient transport during emergencies.', icon: 'Ambulance' },
   { name: 'In-house Physiotherapy', description: 'A modern physiotherapy department to support post-surgical and stroke rehabilitation.', icon: 'PersonStanding' },
 ];
 

@@ -1,6 +1,7 @@
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { testimonials } from '@/lib/data';
+import { User } from 'lucide-react';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -28,8 +29,9 @@ export default function TestimonialsPage() {
               <CardHeader>
                 <div className="flex items-center gap-4">
                   <Avatar>
-                    <AvatarImage src={testimonial.avatarUrl.replace('100/100', `100/10${index}`)} alt={testimonial.name} />
-                    <AvatarFallback>{testimonial.name.charAt(0)}</AvatarFallback>
+                    <AvatarFallback className="bg-primary/10">
+                      <User className="h-5 w-5 text-primary" />
+                    </AvatarFallback>
                   </Avatar>
                   <div>
                     <CardTitle className="text-base font-bold">{testimonial.name}</CardTitle>
