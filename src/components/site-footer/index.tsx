@@ -59,7 +59,14 @@ export function SiteFooter() {
                         <ul className={footerStyles.contactList}>
                             <li className={footerStyles.contactItem}>
                                 <span className={footerStyles.contactIcon}>📍</span>
-                                <span>Gudi Veedhi, Edepalli, Srinivas Nagar Colony, Machilipatnam, Andhra Pradesh 521001</span>
+                                <a
+                                    href="https://www.google.com/maps/place/Dr.Bhavana+neuro+care/@16.1877199,81.1370082,17z/data=!3m1!4b1!4m6!3m5!1s0x3a49e71435900713:0x45f8e12eadc0358b!8m2!3d16.1877199!4d81.1370082!16s%2Fg%2F11mm855d0q"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="hover:text-primary transition-colors"
+                                >
+                                    Gudi Veedhi, Edepalli, Srinivas Nagar Colony, Machilipatnam, Andhra Pradesh 521001
+                                </a>
                             </li>
                             <li className={footerStyles.contactItem}>
                                 <span className={footerStyles.contactIcon}>📞</span>

@@ -5,28 +5,27 @@ interface GoogleMapEmbedProps {
 }
 
 export function GoogleMapEmbed({ address, url, className = '' }: GoogleMapEmbedProps) {
-  let mapUrl: string;
+  let mapUrl = '';
 
-  if (url) {
-    // If a direct URL is provided, extract the place ID or use embed format
-    if (url.includes('place/')) {
-      // Extract place name and coordinates from the URL
-      const placeMatch = url.match(/place\/([^/]+)\/@([0-9.-]+),([0-9.-]+)/);
-      if (placeMatch) {
-        const [, placeName, lat, lng] = placeMatch;
-        mapUrl = `https://www.google.com/maps?q=${lat},${lng}&output=embed`;
-      } else {
-        // Fallback to converting the normal URL to embed
-        mapUrl = url.replace('/maps/place/', '/maps/embed/v1/place?key=').replace(/\?.*$/, '');
-      }
+  if (url && url.includes('place/')) {
+    // Attempt to extract coordinates first
+    const placeMatch = url.match(/@([0-9.-]+),([0-9.-]+)/);
+    if (placeMatch) {
+      const [, lat, lng] = placeMatch;
+      mapUrl = `https://www.google.com/maps?q=${lat},${lng}&output=embed`;
     } else {
-      mapUrl = url;
+      // Last resort: try to use the place name from URL
+      const nameMatch = url.match(/place\/([^/]+)/);
+      if (nameMatch) {
+        mapUrl = `https://www.google.com/maps?q=${nameMatch[1]}&output=embed`;
+      }
     }
-  } else if (address) {
+  }
+
+  // Fallback to address if mapUrl is still empty
+  if (!mapUrl && address) {
     const encodedAddress = encodeURIComponent(address);
     mapUrl = `https://www.google.com/maps?q=${encodedAddress}&output=embed`;
-  } else {
-    mapUrl = '';
   }
 
   return (

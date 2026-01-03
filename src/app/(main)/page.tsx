@@ -48,54 +48,101 @@ export default function Home() {
   return (
     <div className={homeStyles.container}>
       <section className={homeStyles.heroSection}>
-        <div className={homeStyles.heroImageWrapper}>
-          <iframe
-            src="https://example-brain-animation.vercel.app/"
-            className="w-full h-full border-0"
-            title="Brain Animation Background"
-          />
-        </div>
-        <div className={homeStyles.heroImageMobile}>
-          <img
-            src="/banner4.jpg"
-            alt="Dr. Bhavana Neuro Care"
-            className="w-full h-full object-cover"
-          />
-        </div>
+        {/* Background Decorations */}
+        <div className={`${homeStyles.heroDecoration} w-[500px] h-[500px] -top-20 -left-20`} />
+        <div className={`${homeStyles.heroDecoration} w-[300px] h-[300px] bottom-0 right-0 bg-blue-500/5`} />
+
         <div className={homeStyles.heroContent}>
+          {/* Left Column: Text Content */}
           <motion.div
             className={homeStyles.heroTextWrapper}
             initial="hidden"
             animate="visible"
             variants={containerVariants}
           >
-            <motion.h1
-              className={homeStyles.heroTitle}
-              variants={itemVariants}
-            >
-              Expert, Compassionate Neurological Care
+            <motion.h1 className={homeStyles.heroTitle} variants={itemVariants}>
+              Expert, Compassionate <br className="hidden md:block" />
+              <span className="text-primary">Neurological Care</span>
             </motion.h1>
-            <motion.p
-              className={homeStyles.heroDescription}
-              variants={itemVariants}
-            >
-              Welcome to Dr. Bhavana Neuro Care, where advanced neuroscience meets dedicated patient care. We are committed to providing comprehensive and affordable treatment for a wide range of neurological and related health conditions.
+
+            <motion.p className={homeStyles.heroDescription} variants={itemVariants}>
+              Led by <strong>Dr. Rakesh & Dr. Bhavana</strong>, we provide expert treatment for stroke, epilepsy, spine and all neurological disorders with a patient-first approach.
             </motion.p>
+
+            {/* Mobile/Tablet Image (Visible below LG) */}
             <motion.div
-              className={homeStyles.heroButtons}
+              className="block lg:hidden relative z-10 px-4 mt-8 mb-8"
               variants={itemVariants}
             >
-              <Button size="lg" asChild>
-                <Link href="/contact#appointment">
-                  Book Appointment
+              <div className={homeStyles.heroImageWrapper}>
+                <img
+                  src="/doctors-hero.jpg"
+                  alt="Dr. Bhavana & Medical Team"
+                  className={homeStyles.heroImage}
+                />
+                <div className="absolute top-4 right-4 bg-white/30 backdrop-blur-md px-3 py-2 rounded-lg shadow-xl border border-white/20">
+                  <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Our Expert Doctors</p>
+                  <p className="text-xs font-bold text-slate-900">Dr. Rakesh & Dr. Bhavana</p>
+                </div>
+              </div>
+            </motion.div>
+
+            <motion.div className={homeStyles.heroButtons} variants={itemVariants}>
+              <Button size="lg" className="rounded-full px-8 text-base h-12" asChild>
+                <Link href="/contact">Book Appointment</Link>
+              </Button>
+              <Button
+                size="lg"
+                variant="outline"
+                className={`${homeStyles.emergencyButton} rounded-full px-8 text-base h-12`}
+                asChild
+              >
+                <Link href="tel:+917893959393">
+                  <Phone className="mr-2 h-4 w-4" /> Emergency: +91 78939 59393
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className={homeStyles.emergencyButton}>
-                <Phone className="mr-2 h-5 w-5" /> Call 24/7 Emergency
-              </Button>
+            </motion.div>
+
+            {/* Quick Trust Indicators */}
+            <motion.div
+              variants={itemVariants}
+              className="mt-8 pt-8 border-t border-slate-200 dark:border-slate-800 flex items-center justify-center lg:justify-start gap-6 text-sm text-muted-foreground"
+            >
+              <div className="flex items-center gap-2">
+                <ShieldCheck className="h-5 w-5 text-green-600" />
+                <span>Certified Care</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <User className="h-5 w-5 text-blue-600" />
+                <span>Expert Specialists</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Star className="h-5 w-5 text-yellow-500" />
+                <span>Patient Centric</span>
+              </div>
             </motion.div>
           </motion.div>
 
+          {/* Right Column: Desktop Doctor Image (Visible on LG+) */}
+          <motion.div
+            className={`${homeStyles.heroImageContainer} hidden lg:block`}
+            initial={{ opacity: 0, scale: 0.95, y: 20 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+          >
+            <div className={homeStyles.heroImageWrapper}>
+              <img
+                src="/doctors-hero.jpg"
+                alt="Dr. Bhavana & Medical Team"
+                className={homeStyles.heroImage}
+              />
+              {/* Optional: Floating Badge */}
+              <div className="absolute bottom-6 left-6 bg-white/30 backdrop-blur-md px-4 py-3 rounded-xl shadow-xl border border-white/20">
+                <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Our Expert Doctors</p>
+                <p className="text-sm font-bold text-slate-900"> Dr. Rakesh & Dr. Bhavana</p>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </section>
 
