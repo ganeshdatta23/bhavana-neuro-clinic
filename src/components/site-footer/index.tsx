@@ -20,7 +20,7 @@ export function SiteFooter() {
                     <div className={footerStyles.col1}>
                         <Logo className="footer" />
                         <p className={footerStyles.description}>
-                            Providing expert, compassionate neurological and multispeciality care.<br/>
+                            Providing expert, compassionate neurological and multispeciality care.<br />
                             <span className="text-sm">Under Dr. Kagitha Lakshmi Narendra Charitable Trust</span>
                         </p>
                         <div className={footerStyles.socialWrapper}>
@@ -59,7 +59,7 @@ export function SiteFooter() {
                         <ul className={footerStyles.contactList}>
                             <li className={footerStyles.contactItem}>
                                 <span className={footerStyles.contactIcon}>📍</span>
-                                <span>123 Health St, Medical Sector, Vijayawada, Andhra Pradesh, 520001</span>
+                                <span>Gudi Veedhi, Edepalli, Srinivas Nagar Colony, Machilipatnam, Andhra Pradesh 521001</span>
                             </li>
                             <li className={footerStyles.contactItem}>
                                 <span className={footerStyles.contactIcon}>📞</span>

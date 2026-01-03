@@ -20,7 +20,7 @@ const fontHeadline = Poppins({
 
 export const metadata: Metadata = {
   title: 'Dr. Bhavana Neuro Care | Expert Neurological Care',
-  description: 'Leading neurology and multispeciality hospital in Vijayawada providing advanced, patient-centric care for stroke, epilepsy, headache, and spine disorders.',
+  description: 'Leading neurology and multispeciality hospital in Machilipatnam providing advanced, patient-centric care for stroke, epilepsy, headache, and spine disorders.',
 };
 
 export default function RootLayout({

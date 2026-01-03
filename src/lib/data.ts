@@ -174,9 +174,9 @@ export const doctors: Doctor[] = [
   {
     id: 'dr-parasa-lakshmi-bhavana',
     name: 'Dr. Parasa Lakshmi Bhavana',
-    qualification: 'MBBS, MD (General Medicine), SR (Critical Care Medicine), DNB (Neurology)',
-    experience: 'Trained at NIMHANS, Bangalore',
-    specialty: 'Chief Neurologist',
+    qualification: 'MBBS, MD - General Medicine, DNB - Neurology',
+    experience: '7 Years Experience Overall',
+    specialty: 'Neurologist',
     interests: ['Stroke', 'Migraine', 'Epilepsy', 'Movement Disorders', 'Neuro-Muscular Disorders (NMD)', 'Spine Disorders'],
     languages: ['English', 'Hindi', 'Telugu'],
     message: 'My goal is to provide clear answers and effective treatment to help you regain control of your life.',

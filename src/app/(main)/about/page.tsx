@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'About Dr. Bhavana Neuro Care',
-  description: 'Learn about our mission, vision, and commitment to providing the highest standards of neurological and multispeciality care in Vijayawada.',
+  description: 'Learn about our mission, vision, and commitment to providing the highest standards of neurological and multispeciality care in Machilipatnam.',
 };
 
 export default function AboutPage() {
@@ -23,7 +23,7 @@ export default function AboutPage() {
           <div>
             <h2 className="font-headline text-3xl font-semibold text-primary">Our Mission</h2>
             <p className="mt-4 text-muted-foreground">
-              To provide accessible, affordable, and high-quality neurological and multispeciality healthcare to the people of Vijayawada and beyond. We are dedicated to leveraging advanced technology and medical expertise within a culture of compassion, respect, and patient-centric care.
+              To provide accessible, affordable, and high-quality neurological and multispeciality healthcare to the people of Machilipatnam and beyond. We are dedicated to leveraging advanced technology and medical expertise within a culture of compassion, respect, and patient-centric care.
             </p>
           </div>
           <div>

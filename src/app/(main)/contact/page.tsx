@@ -55,9 +55,10 @@ export default function ContactPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">123 Health Street, Medical Sector,<br />Vijayawada, Andhra Pradesh, 520001</p>
+                <p className="text-muted-foreground">Gudi Veedhi, Edepalli, Srinivas Nagar Colony,<br />Machilipatnam, Andhra Pradesh 521001</p>
                 <GoogleMapEmbed
-                  address="123 Health Street, Medical Sector, Vijayawada, Andhra Pradesh, 520001"
+                  url="https://www.google.com/maps/place/Dr.Bhavana+neuro+care/@16.1877199,81.1370082,17z/data=!3m1!4b1!4m6!3m5!1s0x3a49e71435900713:0x45f8e12eadc0358b!8m2!3d16.1877199!4d81.1370082!16s%2Fg%2F11mm855d0q"
+                  address="Gudi Veedhi, Edepalli, Srinivas Nagar Colony, Machilipatnam, Andhra Pradesh 521001"
                   className="mt-4 h-64 w-full rounded-md overflow-hidden"
                 />
                 <p className='mt-4 text-sm text-muted-foreground'>Ample parking available for patients and visitors.</p>
