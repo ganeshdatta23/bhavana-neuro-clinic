@@ -5,6 +5,7 @@ import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { whyChooseUs, stats, testimonials, services } from '@/lib/data';
 import { Phone, ShieldCheck, ArrowRight, Star, User } from 'lucide-react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from '@/components/ui/carousel';
 import { DepartmentCard } from '@/components/department-card';
 import { GlowCard } from '@/components/ui/glow-card';
@@ -18,6 +19,7 @@ import type { DiseaseData, NeurologicalCondition } from '@/lib/disease-utils';
 import { getDiseaseByServiceId } from '@/lib/disease-utils';
 
 export default function Home() {
+  const router = useRouter();
   const plugin = useRef(
     Autoplay({ delay: 3000, stopOnInteraction: false })
   );
@@ -35,6 +37,13 @@ export default function Home() {
   }, []);
 
   const handleServiceClick = (serviceId: string) => {
+    // Check if service has a slug for SEO page navigation
+    const service = services.find(s => s.id === serviceId);
+    if (service?.slug) {
+      router.push(`/services/${service.slug}`);
+      return;
+    }
+
     if (!diseaseData) return;
     const disease = getDiseaseByServiceId(serviceId, diseaseData);
     if (disease) {
@@ -61,13 +70,21 @@ export default function Home() {
             variants={containerVariants}
           >
             <motion.h1 className={homeStyles.heroTitle} variants={itemVariants}>
-              Expert, Compassionate <br className="hidden md:block" />
-              <span className="text-primary">Neurological Care</span>
+              Neurologist in Machilipatnam <br className="hidden md:block" />
+              <span className="text-primary text-3xl md:text-5xl block mt-2">Expert, Compassionate Neurological Care</span>
             </motion.h1>
 
             <motion.p className={homeStyles.heroDescription} variants={itemVariants}>
-              Led by <strong>Dr. Rakesh & Dr. Bhavana</strong>, we provide expert treatment for stroke, epilepsy, spine and all neurological disorders with a patient-first approach.
+              Led by <strong>Dr. Rakesh & Dr. Bhavana</strong>, we provide world-class treatment for stroke, epilepsy, migraine, and other neurological disorders. Serving patients from Machilipatnam, Gudivada, Avanigadda, Repalle, and surrounding villages in Krishna District.
             </motion.p>
+
+            <motion.div variants={itemVariants} className="mb-8 p-4 bg-primary/5 border border-primary/10 rounded-xl relative overflow-hidden">
+              <div className="absolute top-0 right-0 w-20 h-20 bg-primary/10 rounded-full blur-2xl -translate-y-1/2 translate-x-1/2"></div>
+              <h2 className="text-lg font-bold text-gray-900 mb-2">Why Choose Us?</h2>
+              <p className="text-gray-700 text-sm leading-relaxed">
+                We are the trusted neurology clinic for families across the coastal belt. Whether you need an epilepsy specialist or a stroke hospital, our facility in Srinivas Nagar Colony offers advanced care close to home.
+              </p>
+            </motion.div>
 
             {/* Mobile/Tablet Image (Visible below LG) */}
             <motion.div

@@ -7,7 +7,8 @@ export const services: Service[] = [
     shortDescription: 'Relief from chronic headaches and migraines.',
     longDescription: 'We provide comprehensive diagnosis and treatment for all types of headaches and migraines, including medication management and lifestyle modifications.',
     icon: 'Headset',
-    treats: ['Migraine', 'Tension Headache', 'Cluster Headache']
+    treats: ['Migraine', 'Tension Headache', 'Cluster Headache'],
+    slug: 'migraine-headache-specialist-machilipatnam'
   },
   {
     id: 'stroke-paralysis',
@@ -15,7 +16,8 @@ export const services: Service[] = [
     shortDescription: 'Rapid response and comprehensive stroke treatment.',
     longDescription: 'Our dedicated Stroke Unit provides 24/7 emergency care, including thrombolysis and mechanical thrombectomy, followed by intensive rehabilitation to maximize recovery.',
     icon: 'HeartPulse',
-    treats: ['Ischemic Stroke', 'Hemorrhagic Stroke', 'Transient Ischemic Attack (TIA)']
+    treats: ['Ischemic Stroke', 'Hemorrhagic Stroke', 'Transient Ischemic Attack (TIA)'],
+    slug: 'stroke-treatment-machilipatnam'
   },
   {
     id: 'epilepsy',
@@ -23,7 +25,8 @@ export const services: Service[] = [
     shortDescription: 'Specialized care for seizure management.',
     longDescription: 'Our Epilepsy Clinic offers advanced diagnosis with EEG, medication management, and counseling to help patients control seizures and improve their quality of life.',
     icon: 'Zap',
-    treats: ['Generalized Seizures', 'Focal Seizures', 'Status Epilepticus']
+    treats: ['Generalized Seizures', 'Focal Seizures', 'Status Epilepticus'],
+    slug: 'epilepsy-clinic-machilipatnam'
   },
   {
     id: 'vertigo',
@@ -31,7 +34,8 @@ export const services: Service[] = [
     shortDescription: 'Diagnosis and treatment of balance disorders.',
     longDescription: 'Comprehensive evaluation and management of vertigo and dizziness, including vestibular rehabilitation and medication therapy.',
     icon: 'BrainCircuit',
-    treats: ['BPPV', 'Vestibular Neuritis', 'Meniere\'s Disease']
+    treats: ['BPPV', 'Vestibular Neuritis', 'Meniere\'s Disease'],
+    slug: 'vertigo-balance-disorders-machilipatnam'
   },
   {
     id: 'parkinsons',
@@ -39,7 +43,8 @@ export const services: Service[] = [
     shortDescription: 'Management of movement disorders.',
     longDescription: 'Specialized care for Parkinson\'s disease and other movement disorders with medication management and physiotherapy support.',
     icon: 'Brain',
-    treats: ['Parkinson\'s Disease', 'Essential Tremor', 'Dystonia']
+    treats: ['Parkinson\'s Disease', 'Essential Tremor', 'Dystonia'],
+    slug: 'parkinsons-movement-disorders-machilipatnam'
   },
   {
     id: 'memory-dementia',
@@ -47,7 +52,8 @@ export const services: Service[] = [
     shortDescription: 'Cognitive assessment and dementia care.',
     longDescription: 'Comprehensive evaluation and management of memory disorders, including Alzheimer\'s disease and other forms of dementia.',
     icon: 'BrainCircuit',
-    treats: ['Alzheimer\'s Disease', 'Vascular Dementia', 'Mild Cognitive Impairment']
+    treats: ['Alzheimer\'s Disease', 'Vascular Dementia', 'Mild Cognitive Impairment'],
+    slug: 'memory-loss-dementia-care-machilipatnam'
   },
   {
     id: 'diabetic-neuropathy',
@@ -217,13 +223,13 @@ export const testimonials: Testimonial[] = [
   {
     id: 't4',
     name: 'P. Rama Rao, Vijayawada',
-    quote: 'The Neuro department is fantastic. Their personalized exercises and constant encouragement helped me recover fully after my spine surgery. Highly recommended.',
+    quote: 'The Neuro department is fantastic. Their personalized exercises helped me recover fully after my spine surgery. Highly recommended for patients from Vijayawada.',
     avatarUrl: 'https://picsum.photos/seed/patient4/100/100',
   },
   {
     id: 't5',
     name: 'SK. Nazeema Begum, Machilipatnam',
-    quote: 'Finding a good neurologist was a challenge. Dr. Bhavana was so patient, listened to all my concerns about my migraines, and the treatment has made a huge difference.',
+    quote: 'Finding a good neurologist in Machilipatnam was a challenge. Dr. Bhavana was so patient with my migraine treatment. I recommend her to everyone in Krishna District.',
     avatarUrl: 'https://picsum.photos/seed/patient5/100/100',
   },
 ];
@@ -258,6 +264,11 @@ export const whyChooseUs: WhyChooseUsItem[] = [
     title: 'Affordable Treatment',
     description: 'We are committed to providing high-quality healthcare that is accessible and affordable for everyone.',
     icon: 'FileCheck',
+  },
+  {
+    title: 'Convenient Location',
+    description: 'Located at Gudi Veedhi, Edepalli, Srinivas Nagar Colony, easily accessible from Machilipatnam bus stand and nearby towns like Gudivada and Avanigadda.',
+    icon: 'MapPin',
   },
 ];
 

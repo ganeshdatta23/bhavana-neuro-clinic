@@ -5,6 +5,7 @@ export type Service = {
   longDescription: string;
   icon: string;
   treats: string[];
+  slug?: string;
 };
 
 export type Department = {
@@ -34,14 +35,14 @@ export type Testimonial = {
 };
 
 export type WhyChooseUsItem = {
-    title: string;
-    description: string;
-    icon: string;
+  title: string;
+  description: string;
+  icon: string;
 };
 
 export type Stat = {
-    value: string;
-    label: string;
+  value: string;
+  label: string;
 };
 
 export type Condition = {
