@@ -38,12 +38,12 @@ export default function AboutPage() {
           <h2 className="text-center font-headline text-3xl font-bold">Our Expertise & Standards</h2>
           <div className="mt-8 flex flex-col items-center gap-8 md:flex-row">
             <Avatar className="h-32 w-32">
-              <AvatarImage src="https://picsum.photos/seed/founder/400/400" alt="Founder" />
+              <AvatarImage src="/br_logo.png" alt="Founder" />
               <AvatarFallback>FD</AvatarFallback>
             </Avatar>
             <div className='md:w-3/4'>
               <p className="text-muted-foreground">
-                 Dr. Bhavana Neuro Care was established with a simple yet powerful goal: to bridge the gap in specialized neurological care in our community. Starting as a small clinic, our commitment to patient well-being and clinical excellence has fueled our growth into a comprehensive hospital. We operate under the Dr. Kagitha Lakshmi Narendra Charitable Trust.
+                Dr. Bhavana Neuro Care was established with a simple yet powerful goal: to bridge the gap in specialized neurological care in our community. Starting as a small clinic, our commitment to patient well-being and clinical excellence has fueled our growth into a comprehensive hospital. We operate under the Dr. Kagitha Lakshmi Narendra Charitable Trust.
               </p>
               <p className="mt-4 text-muted-foreground">
                 Today, under the continued leadership of Dr. Parasa Lakshmi Bhavana and Dr. Kagitha Rakesh a team of dedicated specialists, we uphold the founding values of integrity, compassion, and innovation. Our leadership team is comprised of experienced medical professionals and administrators who work together to ensure the highest standards of patient care, safety, and operational efficiency.

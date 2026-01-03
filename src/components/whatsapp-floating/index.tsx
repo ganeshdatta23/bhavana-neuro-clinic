@@ -8,7 +8,7 @@ import { whatsappStyles } from './styles';
 
 const WhatsAppIcon = ({ className }: WhatsAppIconProps) => (
     <svg
-        xmlns="http://www.w3.org/2000/svg"
+        xmlns="public\br_logo_inn.svg"
         viewBox="0 0 448 512"
         className={cn(whatsappStyles.icon, className)}
     >
