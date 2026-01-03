@@ -9,15 +9,39 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 import { DepartmentCard } from '@/components/department-card';
 import { GlowCard } from '@/components/ui/glow-card';
 import Autoplay from "embla-carousel-autoplay";
-import { useRef } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { homeStyles } from './styles';
 import { containerVariants, itemVariants } from './constants';
+import { DiseaseDetailDialog } from '@/components/disease-detail-dialog';
+import type { DiseaseData, NeurologicalCondition } from '@/lib/disease-utils';
+import { getDiseaseByServiceId } from '@/lib/disease-utils';
 
 export default function Home() {
   const plugin = useRef(
     Autoplay({ delay: 3000, stopOnInteraction: false })
   );
+
+  const [diseaseData, setDiseaseData] = useState<DiseaseData | null>(null);
+  const [selectedDisease, setSelectedDisease] = useState<NeurologicalCondition | null>(null);
+  const [dialogOpen, setDialogOpen] = useState(false);
+
+  // Load disease data
+  useEffect(() => {
+    fetch('/diseases-info.json')
+      .then((res) => res.json())
+      .then((data) => setDiseaseData(data))
+      .catch((err) => console.error('Failed to load disease data:', err));
+  }, []);
+
+  const handleServiceClick = (serviceId: string) => {
+    if (!diseaseData) return;
+    const disease = getDiseaseByServiceId(serviceId, diseaseData);
+    if (disease) {
+      setSelectedDisease(disease);
+      setDialogOpen(true);
+    }
+  };
 
 
 
@@ -85,10 +109,18 @@ export default function Home() {
                 name={service.title}
                 icon={service.icon}
                 description={service.shortDescription}
+                onClick={() => handleServiceClick(service.id)}
               />
             ))}
           </div>
         </div>
+
+        {/* Disease Detail Dialog */}
+        <DiseaseDetailDialog
+          disease={selectedDisease}
+          open={dialogOpen}
+          onOpenChange={setDialogOpen}
+        />
       </section>
 
       <section id="why-choose-us" className={homeStyles.whyChooseUsSection}>

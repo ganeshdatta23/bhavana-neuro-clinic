@@ -175,7 +175,7 @@ export const doctors: Doctor[] = [
     id: 'dr-parasa-lakshmi-bhavana',
     name: 'Dr. Parasa Lakshmi Bhavana',
     qualification: 'MBBS, MD - General Medicine, DNB - Neurology',
-    experience: '7 Years Experience Overall',
+    experience: '7+ Years of Experience',
     specialty: 'Neurologist',
     interests: ['Stroke', 'Migraine', 'Epilepsy', 'Movement Disorders', 'Neuro-Muscular Disorders (NMD)', 'Spine Disorders'],
     languages: ['English', 'Hindi', 'Telugu'],
@@ -262,7 +262,7 @@ export const whyChooseUs: WhyChooseUsItem[] = [
 ];
 
 export const stats: Stat[] = [
-  { value: '10+', label: 'Years of Experience' },
+  { value: '7+', label: 'Years of Experience' },
   { value: '10,500+', label: 'Successful Consultations' },
   { value: '24/7', label: 'Emergency Neuro Support' },
   { value: '100%', label: 'Patient-Focused Care' },
