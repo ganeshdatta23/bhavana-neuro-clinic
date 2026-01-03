@@ -74,6 +74,24 @@ export default function Home() {
               <span className="text-primary text-3xl md:text-5xl block mt-2">Expert, Compassionate Neurological Care</span>
             </motion.h1>
 
+            {/* Mobile/Tablet Image (Visible below LG) */}
+            <motion.div
+              className="block lg:hidden relative z-10 px-4 mt-8 mb-8"
+              variants={itemVariants}
+            >
+              <div className={homeStyles.heroImageWrapper}>
+                <img
+                  src="/doctors-hero.jpg"
+                  alt="Dr. Bhavana & Medical Team"
+                  className={homeStyles.heroImage}
+                />
+                <div className="absolute top-4 right-4 bg-white/30 backdrop-blur-md px-2 py-1.5 rounded-lg shadow-xl border border-white/20">
+                  <p className="text-[8px] font-semibold uppercase tracking-wider text-slate-500">Our Expert Doctors</p>
+                  <p className="text-[10px] font-bold text-slate-900">Dr. Rakesh & Dr. Bhavana</p>
+                </div>
+              </div>
+            </motion.div>
+
             <motion.p className={homeStyles.heroDescription} variants={itemVariants}>
               Led by <strong>Dr. Rakesh & Dr. Bhavana</strong>, we provide world-class treatment for stroke, epilepsy, migraine, and other neurological disorders. Serving patients from Machilipatnam, Gudivada, Avanigadda, Repalle, and surrounding villages in Krishna District.
             </motion.p>
@@ -87,22 +105,7 @@ export default function Home() {
             </motion.div>
 
             {/* Mobile/Tablet Image (Visible below LG) */}
-            <motion.div
-              className="block lg:hidden relative z-10 px-4 mt-8 mb-8"
-              variants={itemVariants}
-            >
-              <div className={homeStyles.heroImageWrapper}>
-                <img
-                  src="/doctors-hero.jpg"
-                  alt="Dr. Bhavana & Medical Team"
-                  className={homeStyles.heroImage}
-                />
-                <div className="absolute top-4 right-4 bg-white/30 backdrop-blur-md px-3 py-2 rounded-lg shadow-xl border border-white/20">
-                  <p className="text-[10px] font-semibold uppercase tracking-wider text-slate-500">Our Expert Doctors</p>
-                  <p className="text-xs font-bold text-slate-900">Dr. Rakesh & Dr. Bhavana</p>
-                </div>
-              </div>
-            </motion.div>
+
 
             <motion.div className={homeStyles.heroButtons} variants={itemVariants}>
               <Button size="lg" className="rounded-full px-8 text-base h-12" asChild>
