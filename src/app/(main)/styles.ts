@@ -1,7 +1,7 @@
 export const homeStyles = {
     container: "flex flex-col",
     heroSection: "relative bg-gradient-to-br from-blue-50 to-white dark:from-slate-900 dark:to-slate-800 overflow-hidden",
-    heroContent: "container mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-center py-8 md:py-16 relative z-10",
+    heroContent: "container mx-auto grid lg:grid-cols-2 gap-8 lg:gap-12 items-start py-8 md:py-16 relative z-10",
     heroTextWrapper: "flex flex-col gap-6 text-center lg:text-left z-20",
     heroTitle: "text-4xl font-extrabold tracking-tight text-slate-900 dark:text-white md:text-5xl lg:text-6xl drop-shadow-sm leading-tight",
     heroDescription: "text-lg text-slate-600 dark:text-slate-300 md:text-xl leading-relaxed max-w-2xl mx-auto lg:mx-0",
